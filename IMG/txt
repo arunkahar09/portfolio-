@@ -1,0 +1,65 @@
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch 
+🩺 Project Name: SARTHI
+Smart Assistance for Real-Time Healthcare Interaction
+🎯 Objective:
+
+Nearby hospitals aur patients ke beech ek real-time digital bridge banana — taaki dawa, appointment, report, aur emergency madad sab timely mil sakein.
+
+🧩 Main Features (Prototype Level)
+1. Hospital Locator
+
+GPS-based nearby hospital finder.
+
+Hospital type (govt/private, specialization) filter.
+
+Distance, estimated time to reach, contact info.
+
+2. Medicine Reminder & Delivery
+
+User apni prescribed medicines add kare.
+
+App unhe time-to-time notification de (reminder).
+
+Optional: Nearby pharmacy se home delivery integration.
+
+3. Doctor Appointment Scheduler
+
+Hospital ke available doctors ka real-time schedule.
+
+Direct appointment booking.
+
+Confirmation & token system (QR-based entry).
+
+4. Emergency Help
+
+One-tap emergency call (nearest hospital/ambulance).
+
+Live location tracking for ambulance dispatch.
+
+SOS message to family contacts.
+
+5. Patient Record Management
+
+Cloud-based health records (reports, prescriptions).
+
+Doctor–patient easy access with permission control.
+
+🧠 Technology Stack (Prototype Suggestion)
+Component	Technology Suggestion
+Frontend (App)	Flutter / React Native
+Backend	Node.js + Express
+Database	Firebase / MongoDB
+APIs	Google Maps API (for hospital location), Twilio (for SMS alerts)
+Authentication	Firebase Auth / OAuth
+Hosting	AWS / Firebase Hosting
+💡 Prototype Flow (User Journey)
+
+User app open karta hai → location permission deta hai.
+
+App nearby hospitals list karta hai.
+
+User select karta hai → appointment ya medicine reminder set karta hai.
+
+Backend reminder trigger karta hai (notification / SMS).
+
+In emergency → SOS button → nearest ambulance ko alert.
