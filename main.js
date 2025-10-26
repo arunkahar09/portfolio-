@@ -158,4 +158,55 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-}); // <-- DOMContentLoaded ka closing bracket
+    // ... (aapka poora purana code)
+
+    // --- 7. NAYA CODE: CONTACT FORM HANDLING ---
+    const contactForm = document.getElementById('contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Page reload hone se rokein
+
+            const formData = new FormData(contactForm);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                message: formData.get('message')
+            };
+
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
+
+            try {
+                // Data ko backend par bhejein
+                const response = await fetch('http://localhost:3000/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    alert(result.message);
+                    contactForm.reset();
+                } else {
+                    alert('Error: ' + result.error);
+                }
+
+            } catch (error) {
+                console.error('Fetch error:', error);
+                alert('Network error hua.');
+            } finally {
+                submitButton.textContent = 'Send Message';
+                submitButton.disabled = false;
+            }
+        });
+    }
+
+}); // <-- Yeh aapki file ka closing bracket hai (Line 154)
+
+ // <-- DOMContentLoaded ka closing bracket

@@ -88,7 +88,8 @@
 
 <body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
 
-  <nav id="navbar" class="fixed w-full top-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-sm shadow-none transition-all duration-300">
+  <nav id="navbar"
+    class="fixed w-full top-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-sm shadow-none transition-all duration-300">
 
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
@@ -134,29 +135,43 @@
         <ul
           class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg bg-gray-200 md:bg-transparent shadow-lg md:shadow-none md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-transparent">
 
-          <!-- <li>
-            <a href="#home"
-              class="nav-link block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0 dark:text-white md:dark:hover:text-yellow-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition-colors duration-300"
-              aria-current="page">Home</a>
-          </li> -->
-
           <li>
             <a href="#about"
-              class="nav-link block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0 dark:text-white md:dark:hover:text-yellow-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition-colors duration-300">About</a>
+              class="relative nav-link block py-2 px-3 text-gray-900 dark:text-white md:p-0 transition-all duration-300 group">
+              About
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
           </li>
+
           <li>
             <a href="#skills"
-              class="nav-link block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0 dark:text-white md:dark:hover:text-yellow-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition-colors duration-300">Skill</a>
+              class="relative nav-link block py-2 px-3 text-gray-900 dark:text-white md:p-0 transition-all duration-300 group">
+              Skill
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
           </li>
+
           <li>
             <a href="#projects"
-              class="nav-link block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0 dark:text-white md:dark:hover:text-yellow-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition-colors duration-300">Project</a>
+              class="relative nav-link block py-2 px-3 text-gray-900 dark:text-white md:p-0 transition-all duration-300 group">
+              Project
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
           </li>
+
           <li>
             <a href="#contact"
-              class="nav-link block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0 dark:text-white md:dark:hover:text-yellow-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition-colors duration-300">Contact</a>
+              class="relative nav-link block py-2 px-3 text-gray-900 dark:text-white md:p-0 transition-all duration-300 group">
+              Contact
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
           </li>
         </ul>
+
       </div>
     </div>
   </nav>
@@ -166,7 +181,7 @@
   <section class="h-screen flex flex-col md:flex-row items-center justify-center px-4 md:px-20 gap-10">
 
     <div
-      class="fixed inset-0 z-[-10] bg-[url('../IMG/bg1.jpg')] bg-cover bg-fixed opacity-60 before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/30 before:to-white/10">
+      class="fixed inset-0 z-[-10] bg-[url('/IMG/bg1.jpg')] bg-cover bg-fixed opacity-60 before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/30 before:to-white/10">
     </div>
 
     <!-- Left side: Text -->
@@ -177,9 +192,10 @@
       <p class="text-lg md:text-2xl text-gray-600 dark:text-gray-300 mb-6">
         CODER | Enthusiast Person
       </p>
-      <p class="text-gray-800 dark:text-red-950 max-w-md">
+      <p class="text-gray-700 dark:text-yellow-100 max-w-md">
         I create modern, responsive websites and interfaces that combine design and functionality.
       </p>
+
       <a href="#projects" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition">
         View Projects
       </a>
@@ -195,7 +211,7 @@
 
   <!-- About section  -->
   <!-- About Section -->
-  <section class="bg-white dark:bg-gray-950 py-20" id="about">
+  <section class="bg-white dark:bg-gray-950/80 backdrop-blur-sm shadow-none transition-all duration-300 py-20 " id="about">
     <div class="container mx-auto px-6">
       <div class="max-w-4xl mx-auto text-center leading-relaxed">
         <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">About Me</h2>
@@ -232,108 +248,81 @@
   </section>
 
   <!-- SKILLS SECTION -->
-<section id="skills" class="bg-gradient-to-b from-gray-50 via-gray-100 to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-24">
+<section id="skills-mini" class="py-12">
   <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-extrabold text-center text-gray-900 dark:text-white mb-16 tracking-wide">
+    <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">
       My Skills
     </h2>
 
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 max-w-5xl mx-auto">
-      <!-- Skill Card -->
-      <div class="relative group bg-gray-100 dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
-        <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-indigo-400 to-purple-400 opacity-0 group-hover:opacity-100 blur-lg transition-all duration-500"></div>
-        <div class="relative flex flex-col items-center">
-          <div class="bg-gradient-to-tr from-indigo-500 to-purple-500 p-1 rounded-full mb-3">
-            <div class="bg-white dark:bg-gray-900 rounded-full p-3">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-10 h-10 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
-            </div>
-          </div>
-          <h3 class="text-base font-semibold text-gray-800 dark:text-gray-100">HTML</h3>
-        </div>
+    <div class="flex flex-wrap justify-center gap-6">
+      <!-- HTML -->
+      <div class="flex flex-col items-center text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
+          class="w-12 h-12 mb-1 transition-transform duration-300 hover:scale-110">
+        <span class="text-sm text-gray-800 dark:text-gray-100">HTML</span>
       </div>
 
-      <div class="relative group bg-gray-100 dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
-        <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-400 to-cyan-300 opacity-0 group-hover:opacity-100 blur-lg transition-all duration-500"></div>
-        <div class="relative flex flex-col items-center">
-          <div class="bg-gradient-to-tr from-blue-500 to-cyan-400 p-1 rounded-full mb-3">
-            <div class="bg-white dark:bg-gray-900 rounded-full p-3">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-10 h-10 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
-            </div>
-          </div>
-          <h3 class="text-base font-semibold text-gray-800 dark:text-gray-100">CSS</h3>
-        </div>
+      <!-- CSS -->
+      <div class="flex flex-col items-center text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
+          class="w-12 h-12 mb-1 transition-transform duration-300 hover:scale-110">
+        <span class="text-sm text-gray-800 dark:text-gray-100">CSS</span>
       </div>
 
-      <div class="relative group bg-gray-100 dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
-        <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-yellow-300 to-orange-400 opacity-0 group-hover:opacity-100 blur-lg transition-all duration-500"></div>
-        <div class="relative flex flex-col items-center">
-          <div class="bg-gradient-to-tr from-yellow-400 to-orange-500 p-1 rounded-full mb-3">
-            <div class="bg-white dark:bg-gray-900 rounded-full p-3">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-10 h-10 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
-            </div>
-          </div>
-          <h3 class="text-base font-semibold text-gray-800 dark:text-gray-100">JavaScript</h3>
-        </div>
+      <!-- JavaScript -->
+      <div class="flex flex-col items-center text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"
+          class="w-12 h-12 mb-1 transition-transform duration-300 hover:scale-110">
+        <span class="text-sm text-gray-800 dark:text-gray-100">JavaScript</span>
       </div>
 
-      <div class="relative group bg-gray-100 dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
-        <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-indigo-400 to-blue-500 opacity-0 group-hover:opacity-100 blur-lg transition-all duration-500"></div>
-        <div class="relative flex flex-col items-center">
-          <div class="bg-gradient-to-tr from-blue-700 to-indigo-600 p-1 rounded-full mb-3">
-            <div class="bg-white dark:bg-gray-900 rounded-full p-3">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="w-10 h-10 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
-            </div>
-          </div>
-          <h3 class="text-base font-semibold text-gray-800 dark:text-gray-100">C++</h3>
-        </div>
+      <!-- C++ -->
+      <div class="flex flex-col items-center text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"
+          class="w-12 h-12 mb-1 transition-transform duration-300 hover:scale-110">
+        <span class="text-sm text-gray-800 dark:text-gray-100">C++</span>
       </div>
 
-      <div class="relative group bg-gray-100 dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
-        <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-green-400 to-emerald-300 opacity-0 group-hover:opacity-100 blur-lg transition-all duration-500"></div>
-        <div class="relative flex flex-col items-center">
-          <div class="bg-gradient-to-tr from-green-500 to-emerald-400 p-1 rounded-full mb-3">
-            <div class="bg-white dark:bg-gray-900 rounded-full p-3">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-10 h-10 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
-            </div>
-          </div>
-          <h3 class="text-base font-semibold text-gray-800 dark:text-gray-100">Python</h3>
-        </div>
+      <!-- Python -->
+      <div class="flex flex-col items-center text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+          class="w-12 h-12 mb-1 transition-transform duration-300 hover:scale-110">
+        <span class="text-sm text-gray-800 dark:text-gray-100">Python</span>
       </div>
 
-      <div class="relative group bg-gray-100 dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
-        <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-lime-400 to-green-300 opacity-0 group-hover:opacity-100 blur-lg transition-all duration-500"></div>
-        <div class="relative flex flex-col items-center">
-          <div class="bg-gradient-to-tr from-lime-500 to-green-400 p-1 rounded-full mb-3">
-            <div class="bg-white dark:bg-gray-900 rounded-full p-3">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-10 h-10 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
-            </div>
-          </div>
-          <h3 class="text-base font-semibold text-gray-800 dark:text-gray-100">Node.js</h3>
-        </div>
+      <!-- Node.js -->
+      <div class="flex flex-col items-center text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"
+          class="w-12 h-12 mb-1 transition-transform duration-300 hover:scale-110">
+        <span class="text-sm text-gray-800 dark:text-gray-100">Node.js</span>
       </div>
 
-      <div class="relative group bg-gray-100 dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
-        <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-sky-400 to-indigo-300 opacity-0 group-hover:opacity-100 blur-lg transition-all duration-500"></div>
-        <div class="relative flex flex-col items-center">
-          <div class="bg-gradient-to-tr from-sky-500 to-indigo-400 p-1 rounded-full mb-3">
-            <div class="bg-white dark:bg-gray-900 rounded-full p-3">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind" class="w-10 h-10 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
-            </div>
-          </div>
-          <h3 class="text-base font-semibold text-gray-800 dark:text-gray-100">Tailwind CSS</h3>
-        </div>
+      <!-- Express.js -->
+      <div class="flex flex-col items-center text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"
+          class="w-12 h-12 mb-1 transition-transform duration-300 hover:scale-110">
+        <span class="text-sm text-gray-800 dark:text-gray-100">Express</span>
       </div>
 
-      <div class="relative group bg-gray-100 dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
-        <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-orange-400 to-red-400 opacity-0 group-hover:opacity-100 blur-lg transition-all duration-500"></div>
-        <div class="relative flex flex-col items-center">
-          <div class="bg-gradient-to-tr from-orange-500 to-red-500 p-1 rounded-full mb-3">
-            <div class="bg-white dark:bg-gray-900 rounded-full p-3">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" class="w-10 h-10 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
-            </div>
-          </div>
-          <h3 class="text-base font-semibold text-gray-800 dark:text-gray-100">SQL</h3>
-        </div>
+      <!-- EJS -->
+      <div class="flex flex-col items-center text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ejs/ejs-original.svg" alt="EJS"
+          class="w-12 h-12 mb-1 transition-transform duration-300 hover:scale-110">
+        <span class="text-sm text-gray-800 dark:text-gray-100">EJS</span>
+      </div>
+
+      <!-- Tailwind CSS -->
+      <div class="flex flex-col items-center text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind"
+          class="w-12 h-12 mb-1 transition-transform duration-300 hover:scale-110">
+        <span class="text-sm text-gray-800 dark:text-gray-100">Tailwind</span>
+      </div>
+
+      <!-- MySQL -->
+      <div class="flex flex-col items-center text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"
+          class="w-12 h-12 mb-1 transition-transform duration-300 hover:scale-110">
+        <span class="text-sm text-gray-800 dark:text-gray-100">SQL</span>
       </div>
     </div>
   </div>
@@ -342,53 +331,63 @@
 
   <!-- PROJECTS SECTION -->
 
-  <section id="projects" class="bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800 py-24">
-  <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-extrabold text-center text-gray-900 dark:text-white mb-16 tracking-wide">
-      My Projects
-    </h2>
+  <section id="projects" class="bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 py-24">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-extrabold text-center text-gray-900 dark:text-white mb-16 tracking-wide">
+        My Projects
+      </h2>
 
-    <div class="grid gap-12 md:grid-cols-2 max-w-6xl mx-auto">
+      <div class="grid gap-12 md:grid-cols-2 max-w-6xl mx-auto">
 
-      <!-- Project 1 -->
-      <div class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl relative">
-        <div class="overflow-hidden relative">
-          <img src="IMG/p1 3 211212.jpg" alt="Portfolio Website" class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <!-- Project 1 -->
+        <div
+          class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl relative">
+          <div class="overflow-hidden relative">
+            <img src="IMG/p1 3 211212.jpg" alt="Portfolio Website"
+              class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+          </div>
+          <div class="p-6 relative z-10">
+            <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3">Portfolio Website</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-5">
+              A sleek personal portfolio built using HTML, Tailwind CSS, and JavaScript to showcase my projects, skills,
+              and experience.
+            </p>
+            <a href="https://your-project-link.com" target="_blank"
+              class="inline-block px-5 py-2.5 rounded-md font-medium text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-purple-600 hover:to-indigo-600 transition-all duration-300 shadow-md hover:shadow-lg">
+              View Project
+            </a>
+          </div>
         </div>
-        <div class="p-6 relative z-10">
-          <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3">Portfolio Website</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-5">
-            A sleek personal portfolio built using HTML, Tailwind CSS, and JavaScript to showcase my projects, skills, and experience.
-          </p>
-          <a href="https://your-project-link.com" target="_blank"
-            class="inline-block px-5 py-2.5 rounded-md font-medium text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-purple-600 hover:to-indigo-600 transition-all duration-300 shadow-md hover:shadow-lg">
-            View Project
-          </a>
+
+        <!-- Project 2 -->
+        <div
+          class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl relative">
+          <div class="overflow-hidden relative">
+            <img src="IMG/pexels-divinetechygirl-1181343.jpg" alt="Saarthi App"
+              class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+          </div>
+          <div class="p-6 relative z-10">
+            <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3">Saarthi – App</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-5">
+              Empowering passion with intelligent MERN-powered solutions — your trusted guide harnessing the MERN Stack
+              and Machine Learning to fuel innovation.
+            </p>
+            <a href="https://your-weather-app-link.com" target="_blank"
+              class="inline-block px-5 py-2.5 rounded-md font-medium text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-purple-600 hover:to-indigo-600 transition-all duration-300 shadow-md hover:shadow-lg">
+              View Project
+            </a>
+          </div>
         </div>
+
       </div>
-
-      <!-- Project 2 -->
-      <div class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl relative">
-        <div class="overflow-hidden relative">
-          <img src="IMG/pexels-divinetechygirl-1181343.jpg" alt="Saarthi App" class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        </div>
-        <div class="p-6 relative z-10">
-          <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3">Saarthi – App</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-5">
-            Empowering passion with intelligent MERN-powered solutions — your trusted guide harnessing the MERN Stack and Machine Learning to fuel innovation.
-          </p>
-          <a href="https://your-weather-app-link.com" target="_blank"
-            class="inline-block px-5 py-2.5 rounded-md font-medium text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-purple-600 hover:to-indigo-600 transition-all duration-300 shadow-md hover:shadow-lg">
-            View Project
-          </a>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- CONTACT SECTION -->
@@ -396,7 +395,7 @@
     <div class="container mx-auto px-6 max-w-4xl">
       <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">Get in Touch</h2>
 
-      <form action="#" method="POST" class="space-y-6">
+      <form id="contact-form" action="#" method="POST" class="space-y-6">
         <!-- Name -->
         <div>
           <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
@@ -479,7 +478,8 @@
           <a href="https://github.com/arunkahar09" target="_blank" class="hover:text-white transition">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/arun-kahar-4b404b217/" target="_blank" class="hover:text-white transition">
+          <a href="https://www.linkedin.com/in/arun-kahar-4b404b217/" target="_blank"
+            class="hover:text-white transition">
             <i class="fab fa-linkedin"></i>
           </a>
           <a href="https://www.instagram.com/arun_kahar._/" target="_blank" class="hover:text-white transition">
