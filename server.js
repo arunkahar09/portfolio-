@@ -1,7 +1,8 @@
 // server.js
 const express = require('express');
 const cors = require('cors');
-const db = require('./database'); // database.js se connection import karein
+const path = require('path'); 
+const db = require('./database'); 
 require('dotenv').config();
 
 const app = express();
@@ -11,7 +12,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// API route jo form se data lega
+// 1. Frontend ki HTML/CSS files serve karne ke liye sabse sahi tarika
+app.use(express.static(path.join(__dirname)));
+
+// API route jo HTML form se data lega
 app.post('/api/contact', async (req, res) => {
   try {
     const { name, email, message } = req.body;
@@ -31,6 +35,11 @@ app.post('/api/contact', async (req, res) => {
     console.error('Message save karne mein error:', error.message);
     res.status(500).json({ error: 'Server par koi samasya hai.' });
   }
+});
+
+// 2. Agar koi browser mein '/' open kare toh directly index.html send ho jaye
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(port, () => {
