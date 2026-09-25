@@ -1,0 +1,65 @@
+  <!-- FIXED HEADER / NAVBAR -->
+  <nav id="navbar" class="fixed w-full top-0 z-50 bg-white/80 dark:bg-cyber-bg/80 backdrop-blur-md border-b border-gray-200 dark:border-cyan-950/60 transition-all duration-300">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <!-- LOGO / BRAND -->
+      <a href="#home" class="flex items-center space-x-3 group">
+        <div class="w-8 h-8 rounded bg-gradient-to-br from-cyan-500 to-green-500 flex items-center justify-center text-white font-bold shadow-[0_0_15px_rgba(6,182,212,0.5)] group-hover:scale-105 transition-transform">
+          A
+        </div>
+        <span class="self-center text-lg md:text-xl font-black tracking-widest uppercase text-gray-900 dark:text-white group-hover:text-cyan-400 transition-colors">
+          <%= profile.name ? profile.name.replace(' ', '_').toUpperCase() : 'ARUN_KAHAR' %>//
+        </span>
+      </a>
+
+      <!-- CONTROLS & MOBILE BUTTON -->
+      <div class="flex items-center md:order-2 space-x-3">
+        <!-- THEME SWITCHER -->
+        <button id="theme-toggle" type="button" aria-label="Toggle Theme" class="text-gray-500 dark:text-cyan-400 hover:bg-gray-100 dark:hover:bg-cyan-950/40 focus:outline-none rounded-lg text-sm p-2.5 border border-gray-200 dark:border-cyan-900/50 shadow-[0_0_10px_rgba(6,182,212,0.15)] transition-all cursor-pointer">
+          <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 neon-glow-cyan" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+          </svg>
+          <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm-7.071 0a1 1 0 001.414 1.414l.707-.707a1 1 0 10-1.414-1.414l-.707.707zM3 10a1 1 0 011-1h1a1 1 0 110 2H4a1 1 0 01-1-1zm14 0a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1zm-8.536-6.95l.707-.707a1 1 0 00-1.414-1.414l-.707.707a1 1 0 101.414 1.414zm7.071 0a1 1 0 00-1.414 1.414l.707.707a1 1 0 101.414-1.414l-.707-.707z"></path>
+          </svg>
+        </button>
+
+        <!-- MOBILE MENU HAMBURGER -->
+        <button id="menu-toggle" type="button" aria-label="Toggle Navigation Menu" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-cyan-400 dark:hover:bg-cyan-950/50 focus:outline-none border border-transparent dark:border-cyan-950">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- DESKTOP / COLLAPSIBLE NAV LINKS -->
+      <div class="hidden w-full md:block md:w-auto md:order-1" id="navbar-menu">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg bg-gray-50 md:bg-transparent md:flex-row md:space-x-8 dark:bg-cyber-card md:dark:bg-transparent border border-gray-200 dark:border-cyan-950/60 md:border-0">
+          <li>
+            <a href="#about" class="nav-link block py-2 px-3 text-gray-700 dark:text-gray-300 hover:text-cyan-500 dark:hover:text-cyan-400 font-bold tracking-wider uppercase transition-colors">
+              // ABOUT
+            </a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link block py-2 px-3 text-gray-700 dark:text-gray-300 hover:text-cyan-500 dark:hover:text-cyan-400 font-bold tracking-wider uppercase transition-colors">
+              // SKILLS
+            </a>
+          </li>
+          <li>
+            <a href="#achievements" class="nav-link block py-2 px-3 text-gray-700 dark:text-gray-300 hover:text-cyan-500 dark:hover:text-cyan-400 font-bold tracking-wider uppercase transition-colors">
+              // ACHIEVEMENTS
+            </a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link block py-2 px-3 text-gray-700 dark:text-gray-300 hover:text-cyan-500 dark:hover:text-cyan-400 font-bold tracking-wider uppercase transition-colors">
+              // PROJECTS
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link block py-2 px-3 text-gray-700 dark:text-gray-300 hover:text-cyan-500 dark:hover:text-cyan-400 font-bold tracking-wider uppercase transition-colors">
+              // CONTACT
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

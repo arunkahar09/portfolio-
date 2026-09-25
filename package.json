@@ -1,10 +1,20 @@
 {
+  "name": "cyber-portfolio",
+  "version": "1.0.0",
+  "description": "Futuristic Cyberpunk Developer Portfolio powered by Node.js, Express.js, and EJS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.14",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
     "express": "^5.1.0",
     "mysql2": "^3.15.3",
+    "nodemailer": "^6.10.1",
     "tailwindcss": "^4.1.14"
   }
 }

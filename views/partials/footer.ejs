@@ -1,0 +1,18 @@
+  <!-- MATRIX FOOTER -->
+  <footer class="bg-gray-100 dark:bg-gray-950 border-t border-gray-200 dark:border-cyan-950/40 text-gray-600 dark:text-cyan-600/80 py-12 text-center text-xs tracking-widest uppercase relative z-10">
+    <div class="max-w-7xl mx-auto px-6 space-y-4">
+      <p>// ARCHITECTURE POWERED BY NODE.JS + EXPRESS + EJS &bull; DESIGNED BY <%= profile.name ? profile.name.toUpperCase() : 'ARUN KAHAR' %> &copy; <span id="year-label"><%= new Date().getFullYear() %></span></p>
+      <p class="text-[10px] dark:text-cyan-900">ALL TERMINAL LOGS SECURED &bull; STATUS: STABLE &bull; CYBER_PORTFOLIO v2.0</p>
+    </div>
+  </footer>
+
+  <!-- DYNAMIC CLIENT DATA FOR MODALS / VISUALIZERS -->
+  <script>
+    window.PROJECTS_DATA = <%- JSON.stringify(projects || []) %>;
+    window.TYPING_WORDS = <%- JSON.stringify(profile.titles || ['FULL_STACK_ENGINEER', 'C++ DEVELOPMENT', 'DSA OPTIMIZATION', 'NODE & EXPRESS ARCHITECT']) %>;
+  </script>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title || "ARUN KAHAR | CYBER_PORTFOLIO" %></title>
+  <meta name="description" content="Futuristic Full-Stack Portfolio of Arun Kahar - C++ Engineering, Node.js, Express, EJS & Systems Architecture">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/IMG/LOGO.png">
+
+  <!-- Tailwind CSS Core CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Cyber CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script>
+    // Tailwind Configuration for Futuristic / Cyber Theme
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            cyber: {
+              bg: '#030712',
+              card: '#0b0f19',
+              cardHover: '#111827',
+              neonGreen: '#22c55e',
+              neonCyan: '#06b6d4',
+              neonPurple: '#a855f7',
+              border: '#164e63'
+            }
+          },
+          fontFamily: {
+            mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 dark:bg-cyber-bg text-gray-900 dark:text-gray-100 transition-colors duration-300 font-mono relative overflow-x-hidden min-h-screen">
+  
+  <!-- BACKGROUND GRID SYSTEM -->
+  <div class="fixed inset-0 z-[-10] cyber-grid pointer-events-none"></div>
+
+  <!-- INTERACTIVE PARTICLE CANVAS BACKGROUND -->
+  <canvas id="particleCanvas" class="fixed inset-0 z-[-5] pointer-events-none"></canvas>
