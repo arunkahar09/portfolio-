@@ -329,11 +329,15 @@ app.use((req, res) => {
   });
 });
 
-// Start Server
-app.listen(port, () => {
-  console.log(`=========================================`);
-  console.log(`🚀 Cyber Portfolio running at: http://localhost:${port}`);
-  console.log(`⚡ Developer: ${portfolioData.profile.name} (${portfolioData.profile.email})`);
-  console.log(`📧 Notification Email: ${process.env.RECEIVER_EMAIL || 'arunkahar09@gmail.com'}`);
-  console.log(`=========================================`);
-});
+// Start Server only when run directly, so Vercel can import the app safely
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`=========================================`);
+    console.log(`🚀 Cyber Portfolio running at: http://localhost:${port}`);
+    console.log(`⚡ Developer: ${portfolioData.profile.name} (${portfolioData.profile.email})`);
+    console.log(`📧 Notification Email: ${process.env.RECEIVER_EMAIL || 'arunkahar09@gmail.com'}`);
+    console.log(`=========================================`);
+  });
+}
+
+module.exports = app;
